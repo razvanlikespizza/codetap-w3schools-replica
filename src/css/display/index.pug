@@ -1,0 +1,32 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+     var myTitle = "CSS Display";
+     var myDescription = "Learn CSS Display with CodeTap, don't use w3schools.";
+     var landingPage = "CSS";
+     var activeLink = "/css/display";
+
+block not-awesome-content
+  h1 CSS DISPLAY
+  h3.sub-title The #[span.code display] property specifies if/how an element is displayed.
+  p Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is #[span.code block] or #[span.code inline].
+  h3.sub-title Block-level Elements
+  p A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+  h5 Examples:
+  p &#9679; #{"<div>"}
+  p &#9679; #{"<h1> - <h6>"}
+  p &#9679; #{"<p>"}
+  p &#9679; #{"<form>"}
+  p &#9679; #{"<header>"}
+  p &#9679; #{"<footer>"}
+  p &#9679; #{"<section>"}
+  h3.sub-title Inline Elements
+  p An inline element does not start on a new line and only takes up as much width as necessary.
+  h5 Examples
+  p &#9679; #{"<span>"}
+  p &#9679; #{"<a>"}
+  p &#9679; #{"<img>"}
+  h3.sub-title Display:none;
+  p #[span.code display: none;] is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+  p The #[span.code #{"<script>"}] element uses #[span.code display: none;] as default. 

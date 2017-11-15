@@ -1,13 +1,20 @@
-extends _layout/base
-block settings
-  - title = 'Welcome to Pug Starter';
-  - description = 'Simple pug (jade) starter aimed to quickly deliver HTML & CSS projects';
+extends _component/layout/template
 
-block content
-  h1 Welcome to pug starter!
-  p Simple pug (jade) starter [framework] enabling faster delivery of HTML &amp; CSS projects to a private server and/or automatic deployment of GitHub pages.
-  p There are #{data.menu.length} items in the menu.
-  :markdown-it
-    # Support for markdown
-    - one
-    - two
+block cool-config
+  -
+     var myTitle = "w3-schools replica - CodeTap";
+     var myDescription = "My w3-schools replica aka CodeTap project";
+     var landingPage = "Home";
+     var activeLink = "";
+  link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+  link(rel="icon", href="favicon.ico")
+
+block not-awesome-content
+  h1 This is a replica of w3schools
+  p.slogan THE WORLD'S LARGEST WEB DEVELOPER SITE
+  h1 HTML
+  p The language for building web pages #[a.link(href="/html") right here].
+  h1 CSS
+  p The language fors styling web pages #[a.link(href="/html") right here].
+  h1 JavaScript
+  p The language for programming web pages #[a.link(href="/html") right here].

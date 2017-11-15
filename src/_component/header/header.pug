@@ -1,2 +1,15 @@
-header.header
-  include ../menu/menu
+-
+  var navList = [
+    {label: "Home", link:"/"},
+    {label: "HTML", link:"/html"},
+    {label: "CSS", link:"/css"},
+    {label: "JavaScript", link:"/javascript"}
+  ];
+header
+  a.fa.fa-bars(href="#")
+  a.fa.fa-home(href="#")
+  each navigation in navList
+    if navigation.label == landingPage 
+      a.current(href=navigation.link)=navigation.label
+    else 
+      a(href=navigation.link)=navigation.label

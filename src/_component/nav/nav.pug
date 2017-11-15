@@ -1,0 +1,42 @@
+-
+  var sideMenu = {
+    'Home': {
+      title: "HTML and CSS",
+      linkList: [
+        {label: "Learn HTML", link:"/html"},
+        {label: "Learn CSS", link:"/css"},
+        {label: "Learn JavaScript", link:"/javascript"},
+      ]
+    },
+    'HTML': {
+      title: "HTML tutorial",
+      linkList: [
+        {label: "HTML Paragraphs", link:"/html/paragraphs"},
+        {label: "HTML Comments", link:"/html/comments"},
+        {label: "HTML Links", link:"/html/links"},
+      ]
+    },
+    'CSS': {
+      title: "CSS tutorial",
+      linkList: [
+        {label: "CSS Borders", link:"/css/borders"},
+        {label: "CSS Display ", link:"/css/display"},
+        {label: "CSS Position", link:"/css/position"},
+      ]
+    },
+    'JavaScript': {
+      title: "JavaScript Tutorial",
+      linkList: [
+        {label: "JavaScript Comments", link:"/javascript/comments"},
+        {label: "JavaScript Operators", link:"/javascript/operators"},
+        {label: "JavaScript Functions", link:"/javascript/functions"},
+      ]
+    }
+  };
+nav
+  h3=sideMenu[landingPage].title
+  each navigation in sideMenu[landingPage].linkList
+    if activeLink == navigation.link
+      a.current(href=navigation.link)= navigation.label
+    else
+      a(href=navigation.link)= navigation.label

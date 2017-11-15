@@ -1,0 +1,24 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+     var myTitle = "JavaScript Comments";
+     var myDescription = "Learn JavaScript Comments with CodeTap, don't use w3schools.";
+     var landingPage = "JavaScript";
+     var activeLink = "/javascript/comments";
+
+block not-awesome-content
+  h1 JavaScript Comments
+  h3.sub-title JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+  h3.sub-title JavaScript comments can also be used to prevent execution, when testing alternative code.
+  h4 Single Line Comments
+  p Single line comments start with #[span.code //].
+  p Any text between #[span.code #{"//"}] and the end of the line will be ignored by JavaScript (will not be executed).
+  p #[span.code #{"//"} This is a single line comment. ]
+  h4 Multi-line Comments
+  p Multi-line comments start with /* and end with */.
+  p Any text between /* and */ will be ignored by JavaScript.
+  p #[span.code #{"/*"} This is a multi ] #[br]
+  p #[span.code line comment ]
+  p #[span.code in JavaScript]
+  p #[span.code #{"*/"}]

@@ -1,0 +1,20 @@
+extends ../_component/layout/template
+
+block cool-config
+  -
+     var myTitle = "Learn JavaScript";
+     var myDescription = "Learn JavaScript with CodeTap, don't use w3schools.";
+     var landingPage = "JavaScript";
+     var activeLink = "";
+
+block not-awesome-content
+  h1 JavaScript Tutorial
+  h3.sub-title JavaScript is the programming language of HTML and the Web.
+  h3.sub-title JavaScript is easy to learn.
+  h3.sub-title This tutorial will teach you JavaScript from basic to advanced.
+  h5 Did you know?
+  p &#9679; JavaScript and Java are completely different languages, both in concept and design.
+  p &#9679; JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+  p &#9679; ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+  h3 #[span.code #{"<script>"}]
+  p In HTML, JavaScript code must be inserted between  #[span.code #{"<script>"}] and #[span.code #{"</script>"}] tags.

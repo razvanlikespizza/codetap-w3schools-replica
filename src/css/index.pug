@@ -1,0 +1,19 @@
+extends ../_component/layout/template
+
+block cool-config
+  -
+     var myTitle = "CSS Tutorial";
+     var myDescription = "Learn CSS with CodeTap, don't use w3schools.";
+     var landingPage = "CSS";
+     var activeLink = "";
+
+block not-awesome-content
+  h1 CSS Tutorial
+  h4.sub-title CSS is a language that describes the style of an HTML document.
+  h4.sub-title CSS describes how HTML elements should be displayed.
+  h4.sub-title This tutorial will teach you CSS from basic to advanced.
+  h3 Example
+  p.code p { #[br]
+    span.code.css font-family: verdana; #[br]
+    span.code.css font-size: 20px;
+  span.code }

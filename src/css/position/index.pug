@@ -1,0 +1,30 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+     var myTitle = "CSS Position";
+     var myDescription = "Learn CSS Position with CodeTap, don't use w3schools.";
+     var landingPage = "CSS";
+     var activeLink = "/css/position";
+
+block not-awesome-content
+  h1 CSS Position
+  h3.sub-title The #[span.code position] property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+  p The position property specifies the type of positioning method used for an element.
+  p There are five different position values:
+  p &#9679; #[span.code static]
+  p &#9679; #[span.code relative]
+  p &#9679; #[span.code fixed]
+  p &#9679; #[span.code absolute]
+  p &#9679; #[span.code sticky]
+  h3.sub-title position: static;
+  p HTML elements are positioned static by default.
+  p Static positioned elements are not affected by the top, bottom, left, and right properties.
+  h3.sub-title position: relative;
+  p An element with position: relative; is positioned relative to its normal position.
+  h3.sub-title position: fixed;
+  p An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+  h3.sub-title position: absolute;
+  p An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+  h3.sub-title position: sticky;
+  p An element with position: sticky; is positioned based on the user's scroll position.

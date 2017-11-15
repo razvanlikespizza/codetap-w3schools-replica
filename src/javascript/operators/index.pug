@@ -1,0 +1,21 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+     var myTitle = "JavaScript Operators";
+     var myDescription = "Learn JavaScript Operators with CodeTap, don't use w3schools.";
+     var landingPage = "JavaScript";
+     var activeLink = "/javascript/operators";
+
+block not-awesome-content
+  h1 JavaScript Operators
+  h3.sub-title The assignment operator (=) assigns a value to a variable.
+  p #[span.code var x = 10;]
+  h3.sub-title The addition operator (+) adds numbers:
+  p #[span.code var z = x + y;]
+  h3.sub-title The multiplication operator (*) multiplies numbers.
+  p #[span.code var z = x * y;]
+  h3.sub-title The substraction operator (-) substracts numbers.
+  p #[span.code var z = x - y;]
+  h3.sub-title The divison operator (/) divides numbers.
+  p #[span.code var z = x / y;]

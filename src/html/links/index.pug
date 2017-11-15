@@ -1,0 +1,22 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+     var myTitle = "HTML Links";
+     var myDescription = "Learn HTML Links with CodeTap, don't use w3schools.";
+     var landingPage = "HTML";
+     var activeLink = "/html/links";
+
+block not-awesome-content
+  h1 HTML Links
+  h3.sub-title Note: A link does not have to be text. It can be an image or any other HTML element.
+  p &#9679; Links are found in nearly all web pages. Links allow users to click their way from page to page.
+  p &#9679; HTML links are hyperlinks.
+  p &#9679; You can click on a link and jump to another document.
+  p &#9679; When you move the mouse over a link, the mouse arrow will turn into a little hand.
+  h3.sub-title In HTML, links are defined with the #{"<a>"} tag:
+  p.code #{'<a href="url">'} link text #{"</a>"}
+  p &#9679; The href attribute specifies the destination address (https://www.w3schools.com/html/) of the link.
+  p &#9679; The link text is the visible part (Visit our HTML tutorial).
+  p &#9679; Clicking on the link text will send you to the specified address.
+  h3.sub-title Note: Without a forward slash on subfolder addresses, you might generate two requests to the server. Many servers will automatically add a forward slash to the address, and then create a new request.

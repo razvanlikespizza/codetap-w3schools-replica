@@ -1,0 +1,19 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+     var myTitle = "HTML Parahraphs";
+     var myDescription = "Learn HTML with CodeTap it's easier, don't use w3schools.";
+     var landingPage = "HTML";
+     var activeLink = "/html/paragraphs";
+
+block not-awesome-content
+  h1 HTML Paragraphs
+  h3.sub-title The HTML #{"<p>"} element defines a paragraph:
+  p #[span.code #{"<p>"}] This is another paragraph. #[span.code #{"</p>"}]
+  h4.sub-title Note: Browsers automatically add some white space (a margin) before and after a paragraph.
+  h3 Tips
+  p &#9679; You cannot be sure how HTML will be displayed.
+  p &#9679; Large or small screens, and resized windows will create different results.
+  p &#9679; With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.
+  p  &#9679; The browser will remove any extra spaces and extra lines when the page is displayed.
