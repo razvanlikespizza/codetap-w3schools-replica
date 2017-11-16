@@ -148,7 +148,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  opacity: 0.8;
-  font-size: 12px;
+  a {
+    color: white;
+    opacity: 0.8;
+    font-size: 12px;
+    text-decoration: none;
+  }
 }
